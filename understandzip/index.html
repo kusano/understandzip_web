@@ -99,6 +99,34 @@
             </ul>
             <li><a href="https://github.com/kusano/understandzip_web">https://github.com/kusano/understandzip_web</a>でコードハイライト付きの閲覧や、まとめてのダウンロードができます</li>
           </ul>
+          <h2>正誤表</h2>
+          <table>
+            <tr>
+              <th>ページ</th>
+              <th>誤</th>
+              <th>正</th>
+            </tr>
+            <tr>
+              <td style="text-align: right">13</td>
+              <td>Local file headerの構成は次の通りです。</td>
+              <td><b>Central directory header</b>の構成は次の通りです。</td>
+            </tr>
+            <tr>
+              <td style="text-align: right">14</td>
+              <td>extraFieldLength 2 bytes</td>
+              <td>extraFieldLength <b>4</b> bytes</td>
+            </tr>
+            <tr>
+              <td style="text-align: right">33</td>
+              <td>stream.write(1); // BFINAL = 0</td>
+              <td>stream.write(1); // BFINAL = <b>1</b></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">48</td>
+              <td>（key0[p]の最下位バイト）が変換しても</td>
+              <td>（key0[p]の最下位バイト）が<b>変化</b>しても</td>
+            </tr>
+          </table>
         </div>
       </div>
     </section>
