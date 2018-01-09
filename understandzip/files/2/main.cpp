@@ -502,7 +502,7 @@ vector<uint8_t> deflate(vector<uint8_t> data)
 
     //  圧縮結果を書き出す
     BitStream stream;
-    stream.write(1);        //  BFINAL = 0
+    stream.write(1);        //  BFINAL = 1
     stream.writeBits(2, 2); //  BTYPE = 10
     
     stream.writeBits(HLIT, 5);
